@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Basics | BugBounty LAB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lesson.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">BugBounty<span class="accent">.</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">← Roadmap</a></li>
+        </ul>
+    </nav>
+
+    <main class="lesson-container">
+        <header class="lesson-header">
+            <span class="module-tag">Module 01</span>
+            <h1>The Command Line (CLI)</h1>
+            <p class="subtitle">Hackers don't rely on graphical interfaces. To truly control a computer, you must learn to speak to it directly.</p>
+        </header>
+
+        <section class="lesson-section theory">
+            <h2>1. The Theory</h2>
+            <p>Most people interact with computers using a mouse to click icons. This is the <strong>Graphical User Interface (GUI)</strong>. However, underneath every GUI is a shell—a program that takes text commands and passes them to the operating system to execute.</p>
+            <p>Why do bug bounty hunters use the Command Line Interface (CLI)?</p>
+            <ul>
+                <li><strong>Speed:</strong> Typing commands is vastly faster than clicking through menus.</li>
+                <li><strong>Automation:</strong> You can script hundreds of commands to run automatically.</li>
+                <li><strong>Control:</strong> Many powerful hacking tools do not even have a GUI.</li>
+            </ul>
+        </section>
+
+        <section class="lesson-section example">
+            <h2>2. The Example</h2>
+            <p>One of the most basic things you need to know when you break into a system is: <em>"Who am I currently logged in as?"</em></p>
+            <div class="code-block">
+<pre><code># Check your current user identity:
+whoami
+
+# Example Output:
+root</code></pre>
+            </div>
+        </section>
+
+        <section class="lesson-section lab">
+            <h2>3. Hands-on Challenge</h2>
+            <div class="challenge-brief">
+                <strong>🎯 Objective:</strong> You have gained access to a remote terminal. Type the correct command to find out your current username and retrieve the flag.
+            </div>
+
+            <div class="terminal-workspace">
+                <div class="terminal-header-bar">Interactive Terminal</div>
+                <div class="terminal-output" id="terminal-screen" onclick="document.getElementById('cmd-input').focus()">
+                    <div>Welcome to BugOS v1.0.</div>
+                    <div>Type a command and press Enter.</div>
+                    <br>
+                    <div class="input-line">
+                        <span class="prompt-text">user@bugbounty:~$</span>
+                        <input type="text" id="cmd-input" autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lesson-footer">
+            <button class="btn-minimal" id="complete-btn" style="display: none;" onclick="window.location.href='index.html'">← Back to Roadmap</button>
+        </div>
+    </main>
+
+    <script src="lesson-basics.js"></script>
+</body>
+</html>
