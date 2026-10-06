@@ -3,83 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BugBounty LAB | Learn. Hunt. Report.</title>
+    <title>BugBounty LAB | Minimal</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">BugBounty<span class="accent">_LAB</span></div>
+        <div class="logo">BugBounty<span class="accent">.</span></div>
         <ul class="nav-links">
             <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#community">Community</a></li>
         </ul>
     </nav>
 
     <header class="hero">
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="title">root@academy:~</span>
-            </div>
-            <div class="terminal-body">
-                <h1>Learn. Hunt. Report.</h1>
-                <p>Master web security from absolute zero.</p>
-                <div class="command-line">
-                    <span class="prompt">$</span> <span class="typing">./start_learning.sh</span>
-                </div>
-                <button class="btn-primary" onclick="startLearning()">[ START LEARNING ]</button>
-            </div>
+        <div class="hero-content">
+            <span class="prompt">_</span>
+            <h1>Learn. Hunt. Report.</h1>
+            <p>Master web security from absolute zero.</p>
+            <button class="btn-minimal" onclick="startLearning()">Start Learning ↓</button>
         </div>
     </header>
 
     <section id="roadmap" class="container">
-        <h2>Your Roadmap</h2>
-        
-        <div class="progress-wrapper">
-            <div class="progress-text">Overall Progress: <span id="progress-text">0%</span></div>
-            <div class="progress-bar-container">
-                <div class="progress-bar" id="progress-fill"></div>
+        <div class="roadmap-header">
+            <h2>Syllabus</h2>
+            <div class="progress-simple">
+                <span id="progress-text">0%</span>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progress-fill"></div>
+                </div>
             </div>
         </div>
 
-        <div class="roadmap-grid">
+        <div class="roadmap-list">
             <!-- Lesson 1 -->
-            <div class="roadmap-card active">
-                <div class="status">→</div>
-                <h3>Computer Basics</h3>
-                <p>Hardware, OS fundamentals, and command line basics.</p>
-                <a href="lesson-basics.html"><button class="btn-secondary">Start Lesson</button></a>
-            </div>
+            <a href="lesson-basics.html" class="roadmap-item active">
+                <div class="item-status">→</div>
+                <div class="item-details">
+                    <h3>Computer Basics</h3>
+                    <p>Hardware, OS fundamentals, and command line basics.</p>
+                </div>
+            </a>
             
             <!-- Lesson 2 -->
-            <div class="roadmap-card locked">
-                <div class="status">🔒</div>
-                <h3>Networking</h3>
-                <p>TCP/IP, DNS, and how the internet routes traffic.</p>
+            <div class="roadmap-item locked">
+                <div class="item-status">🔒</div>
+                <div class="item-details">
+                    <h3>Networking</h3>
+                    <p>TCP/IP, DNS, and how the internet routes traffic.</p>
+                </div>
             </div>
 
             <!-- Lesson 3 -->
-            <div class="roadmap-card locked">
-                <div class="status">🔒</div>
-                <h3>Web Fundamentals</h3>
-                <p>HTTP/S, requests, responses, and web architecture.</p>
+            <div class="roadmap-item locked">
+                <div class="item-status">🔒</div>
+                <div class="item-details">
+                    <h3>Web Fundamentals</h3>
+                    <p>HTTP/S, requests, responses, and web architecture.</p>
+                </div>
             </div>
 
             <!-- Lesson 4 -->
-            <div class="roadmap-card locked">
-                <div class="status">🔒</div>
-                <h3>Burp Suite Setup</h3>
-                <p>Intercepting proxy setup and basic traffic manipulation.</p>
+            <div class="roadmap-item locked">
+                <div class="item-status">🔒</div>
+                <div class="item-details">
+                    <h3>Burp Suite Setup</h3>
+                    <p>Intercepting proxy setup and basic traffic manipulation.</p>
+                </div>
             </div>
             
             <!-- Lesson 5 -->
-            <div class="roadmap-card locked">
-                <div class="status">🔒</div>
-                <h3>Vulnerability Hunting</h3>
-                <p>OWASP Top 10, XSS, SQLi, and logic flaws.</p>
+            <div class="roadmap-item locked">
+                <div class="item-status">🔒</div>
+                <div class="item-details">
+                    <h3>Vulnerability Hunting</h3>
+                    <p>OWASP Top 10, XSS, SQLi, and logic flaws.</p>
+                </div>
             </div>
         </div>
     </section>
