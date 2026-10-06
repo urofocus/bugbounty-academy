@@ -1,0 +1,147 @@
+.lesson-container {
+    max-width: 700px; /* Narrower width for easier reading */
+    margin: 0 auto;
+    padding: 2rem 5% 5rem 5%;
+}
+
+.module-tag {
+    color: var(--accent-green);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.lesson-header {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 2rem;
+}
+
+.lesson-header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
+.lesson-section {
+    margin-bottom: 3rem;
+}
+
+.lesson-section h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.lesson-section p {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
+.lesson-section ul {
+    margin-left: 1.5rem;
+    color: var(--text-muted);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.lesson-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.lesson-section strong {
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+/* Code & Lab Areas */
+.code-block {
+    background: #0a0a0a;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    color: #e6edf3;
+    overflow-x: auto;
+    font-size: 0.9rem;
+}
+
+.challenge-brief {
+    background: rgba(16, 185, 129, 0.05);
+    border-left: 2px solid var(--accent-green);
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-main);
+    font-size: 0.95rem;
+}
+
+.terminal-workspace {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.terminal-header-bar {
+    background: #0a0a0a;
+    padding: 0.5rem 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.terminal-output {
+    width: 100%;
+    height: 250px;
+    background: var(--bg-dark);
+    color: var(--text-muted);
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    cursor: text;
+}
+
+.input-line {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.prompt-text {
+    color: var(--accent-green);
+}
+
+#cmd-input {
+    background: transparent;
+    border: none;
+    color: var(--text-main);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    flex-grow: 1;
+    outline: none;
+}
+
+.success-text {
+    color: var(--accent-green) !important;
+}
+
+.error-text {
+    color: #ef4444 !important;
+}
+
+.lesson-footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
